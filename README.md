@@ -8,9 +8,9 @@ These configurations are best used with prettier configured separately.
 
 ```js
 
-let slekupConfig = require('eslint-config-slekup');
+import slekupConfig from 'eslint-config-slekup';
 
-module.exports = [
+export default [
   slekupConfig
 }
 ```
