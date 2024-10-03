@@ -5,6 +5,8 @@ const project = resolve(process.cwd(), "tsconfig.json");
 import jsdoc from "eslint-plugin-jsdoc";
 import eslintJs from "@eslint/js";
 import tseslint from "typescript-eslint";
+import tsParser from "@typescript-eslint/parser";
+
 // NOTE: https://github.com/import-js/eslint-plugin-import/issues/2995
 // import importPlugin from "eslint-plugin-import";
 
@@ -25,7 +27,7 @@ export default [
       sourceType: "module",
     }, */
     languageOptions: {
-      parser: "@typescript-eslint/parser",
+      parser: tsParser,
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
