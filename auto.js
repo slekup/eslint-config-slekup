@@ -1,38 +1,62 @@
-module.exports = {
-  extends: 'slekup/prettier',
-  overrides: [
+import prettierConfig from "./prettier.js";
+import nodeConfig from "./node.js";
+import jsdocConfig from "./jsdoc.js";
+import typescriptConfig from "./typescript.js";
+import reactConfig from "./react.js";
+import jsonConfig from "./json.js";
+import yamlConfig from "./yaml.js";
+import markdownConfig from "./markdown.js";
+
+export default [
+  ...prettierConfig,
+  ...[
+    ...nodeConfig,
+    ...jsdocConfig,
     {
-      extends: ['slekup/node', 'slekup/jsdoc'],
-      files: ['*.js', '*.mjs', '*.cjs'],
-    },
-    {
-      extends: ['slekup/node', 'slekup/jsdoc', 'slekup/typescript'],
-      files: ['*.ts'],
-    },
-    {
-      extends: ['slekup/node', 'slekup/jsdoc', 'slekup/react'],
-      files: ['*.jsx'],
-    },
-    {
-      extends: [
-        'slekup/node',
-        'slekup/jsdoc',
-        'slekup/typescript',
-        'slekup/react',
-      ],
-      files: ['*.tsx'],
-    },
-    {
-      extends: ['slekup/json'],
-      files: ['*.json'],
-    },
-    {
-      extends: ['slekup/yaml'],
-      files: ['*.yaml', '*.yml'],
-    },
-    {
-      extends: ['slekup/markdown'],
-      files: ['*.md', '*.mdx', '*.md/*.js'],
+      files: ["*.js", "*.mjs", "*.cjs"],
     },
   ],
-};
+  ...[
+    ...nodeConfig,
+    ...jsdocConfig,
+    ...typescriptConfig,
+    {
+      files: ["*.ts"],
+    },
+  ],
+  ...[
+    ...nodeConfig,
+    ...jsdocConfig,
+    ...reactConfig,
+    {
+      files: ["*.jsx"],
+    },
+  ],
+  ...[
+    ...nodeConfig,
+    ...jsdocConfig,
+    ...typescriptConfig,
+    ...reactConfig,
+    {
+      files: ["*.tsx"],
+    },
+  ],
+  ...[
+    ...jsonConfig,
+    {
+      files: ["*.json"],
+    },
+  ],
+  ...[
+    ...yamlConfig,
+    {
+      files: ["*.yaml", "*.yml"],
+    },
+  ],
+  ...[
+    ...markdownConfig,
+    {
+      files: ["*.md", "*.mdx", "*.md/*.js"],
+    },
+  ],
+];

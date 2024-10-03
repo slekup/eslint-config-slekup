@@ -7,9 +7,12 @@
 These configurations are best used with prettier configured separately.
 
 ```js
-module.exports = {
-  extends: ['slekup'], // Automatic file resolution
-};
+
+let slekupConfig = require('eslint-config-slekup');
+
+module.exports = [
+  slekupConfig
+}
 ```
 
 ## Rulesets
