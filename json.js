@@ -1,12 +1,13 @@
 import eslintPluginJsonc from "eslint-plugin-jsonc";
+import jsonParser from "jsonc-eslint-parser";
 
 export default [
   ...eslintPluginJsonc.configs["flat/recommended-with-jsonc"],
   {
-    ignores: ["**/package.json"],
+    // ignores: ["**/package.json"],
     files: ["*.json", "*.jsonc", "*.json5"],
     languageOptions: {
-      parser: "jsonc-eslint-parser",
+      parser: jsonParser,
     },
     rules: {
       "jsonc/auto": 0, // Automatically configures the parser and plugin based on the file being linted

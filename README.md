@@ -7,12 +7,9 @@
 These configurations are best used with prettier configured separately.
 
 ```js
+import slekupConfig from "eslint-config-slekup";
 
-import slekupConfig from 'eslint-config-slekup';
-
-export default [
-  slekupConfig
-}
+export default [slekupConfig];
 ```
 
 ## Rulesets
