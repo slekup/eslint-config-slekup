@@ -5,7 +5,9 @@ export default [
   {
     ignores: ["**/package.json"],
     files: ["*.json", "*.jsonc", "*.json5"],
-    parser: "jsonc-eslint-parser",
+    languageOptions: {
+      parser: "jsonc-eslint-parser",
+    },
     rules: {
       "jsonc/auto": 0, // Automatically configures the parser and plugin based on the file being linted
       "jsonc/key-name-casing": 0, // Enforces a consistent key name casing for object keys
