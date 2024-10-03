@@ -40,7 +40,7 @@ export default [
       "jsonc/array-element-newline": 0, // Enforces line breaks between array elements
       "jsonc/comma-dangle": 2, // Disallows trailing commas in object literals
       "jsonc/comma-style": [2, "last"], // Enforces consistent comma style
-      "jsonc/indent": [2, 2], // Enforces indentation
+      "jsonc/indent": 2, // Enforces indentation
       "jsonc/key-spacing": 2, // Enforces consistent spacing between keys and values in object literal properties
       "jsonc/no-dupe-keys": 2, // Disallows duplicate keys in object literals
       "jsonc/no-floating-decimal": 2, // Disallows floating decimal points

@@ -194,7 +194,7 @@ export default [
       "react/sort-comp": 2, // Enforce component methods order
       "react/sort-default-props": 2, // Enforce defaultProps declarations alphabetical sorting
       "react/sort-prop-types": 2, // Enforce propTypes declarations alphabetical sorting
-      "react/state-in-constructor": [2, "always"], // Enforces that a class component always initializes state in the constructor.
+      "react/state-in-constructor": 2, // Enforces that a class component always initializes state in the constructor.
       "react/static-property-placement": 2, // Enforces where React component static properties should be positioned.
       "react/style-prop-object": 2, // Enforce style prop value being an object
       "react/void-dom-elements-no-children": 2, // Prevent void DOM elements (e.g. <img />, <br />) from receiving children

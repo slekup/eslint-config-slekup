@@ -10,9 +10,9 @@ export default [
       "yml/block-mapping-question-indicator-newline": 2, // Enforce placing question indicators on new lines in block mappings.
       "yml/block-mapping": 2, // Enforce block mapping style.
       "yml/block-sequence-hyphen-indicator-newline": 2, // Enforce placing hyphen indicators on new lines in block sequences.
-      "yml/block-sequence": [2, "always"], // Enforce block sequence style.
+      "yml/block-sequence": 2, // Enforce block sequence style.
       "yml/file-extension": [2, { extension: "yaml", caseSensitive: true }], // Enforce a file extension.
-      "yml/indent": [2, 2], // Enforce consistent indentation.
+      "yml/indent": 2, // Enforce consistent indentation.
       "yml/key-name-casing": 0, // Enforce a consistent key name casing.
       "yml/no-empty-document": 2, // Disallow empty documents.
       "yml/no-empty-key": 2, // Disallow empty keys.
